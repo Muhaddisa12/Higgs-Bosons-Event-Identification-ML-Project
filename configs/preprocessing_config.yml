@@ -1,0 +1,27 @@
+# Preprocessing Configuration
+# Settings for data loading, splitting, and feature engineering
+
+data:
+  raw_data_path: "data/raw/HIGGS.csv.gz"
+  processed_data_dir: "data/processed"
+  n_samples: 500000  # Number of samples to load (None for all)
+  random_state: 42
+
+splitting:
+  train_ratio: 0.64
+  val_ratio: 0.16
+  test_ratio: 0.20
+  random_state: 42
+  stratify: true
+
+preprocessing:
+  feature_indices: null  # null for all features, or list like [0, 1, 2, ...]
+  scale_features: false  # Tree-based models don't need scaling
+  scaler_type: "standard"  # Options: "standard", "minmax", "robust"
+  remove_outliers: false
+  outlier_method: "iqr"  # Options: "iqr", "zscore"
+  outlier_threshold: 3.0
+
+feature_engineering:
+  create_interactions: false
+  map_physics_names: true

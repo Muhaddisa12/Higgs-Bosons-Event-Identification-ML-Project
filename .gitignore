@@ -1,0 +1,11 @@
+.venv/
+
+data/
+!data/README.md
+outputs/
+models/*.pkl
+models/*.joblib
+models/*json
+__pycache__
+*.pyc 
+.ipynb_checkpoints/

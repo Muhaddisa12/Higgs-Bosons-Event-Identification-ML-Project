@@ -4,7 +4,7 @@
 
 This analysis demonstrates that **machine learning dramatically outperforms traditional physics-based cuts** for Higgs boson signal discrimination at the LHC. While theory-motivated cuts resulted in **0% efficiency** (no events passed selection), all three ML models achieved **~86% accuracy** with varying strengths in signal efficiency, background rejection, and signal-to-background ratios.
 
-### 🏆 Champion Model: XGBoost
+###  Champion Model: XGBoost
 
 **XGBoost** is selected as the optimal model, achieving:
 - **Best S/B ratio**: 7.77:1 (6.5× better than Random Forest, 2.5× better than Gradient Boosting)
@@ -26,7 +26,7 @@ This analysis demonstrates that **machine learning dramatically outperforms trad
 | **Precision (Purity)** | - | 73.25% | **78.58%** | 64.81% | GB |
 | **Recall (Signal Eff.)** | 0% | 94.20% | **96.42%** | 62.34% | GB |
 | **F1-Score** | - | 0.7712 | **0.7953** | 0.6351 | GB |
-| **S/B Ratio @ 0.5** | Undefined | 1.1914 | 3.1027 | **7.7714** | **XGB** ⭐ |
+| **S/B Ratio @ 0.5** | Undefined | 1.1914 | 3.1027 | **7.7714** | **XGB**  |
 | **True Positive Rate** | 0% | 94.20% | **96.42%** | 62.34% | GB |
 | **True Negative Rate** | 100%† | 61.30% | **70.42%** | 61.91% | GB |
 | **False Positive Rate** | 0%† | 38.70% | **29.58%** | 38.09% | GB |
@@ -117,7 +117,7 @@ All three models achieve strong discrimination with AUC values clustered around 
 |-----------|---------------|-------------------|---------|------------|
 | **0.3** | 1.13 | 1.21 | **1.29** | XGB |
 | **0.4** | 1.18 | 1.68 | **1.51** | GB |
-| **0.5** | 1.19 | 3.10 | **7.77** | **XGB** ⭐ |
+| **0.5** | 1.19 | 3.10 | **7.77** | **XGB**  |
 | **0.6** | 1.45 | 4.52 | **3.48** | GB |
 | **0.7** | 2.08 | **7.19** | 3.10 | GB |
 | **0.8** | 3.67 | **12.64** | 4.26 | GB |
@@ -139,7 +139,7 @@ All three models achieve strong discrimination with AUC values clustered around 
 
 | Feature | Random Forest | Gradient Boosting | XGBoost | Average Rank |
 |---------|---------------|-------------------|---------|--------------|
-| **m_bb_paper** | 1st (49.27%) | 1st (74.66%) | 1st (53.24%) | **1st** ⭐ |
+| **m_bb_paper** | 1st (49.27%) | 1st (74.66%) | 1st (53.24%) | **1st**  |
 | **delta_m** | 3rd (10.72%) | 2nd (8.05%) | 3rd (9.11%) | **~2nd** |
 | **bjet_1_btag** | 2nd (11.83%) | 7th (1.49%) | 2nd (9.44%) | **3rd** |
 | **m_missing** | 4th (9.41%) | 3rd (6.02%) | 4th (8.91%) | **4th** |
@@ -335,33 +335,33 @@ Operating characteristics at various working points:
 ### Recommended Applications
 
 #### Random Forest
-✅ **Best For:**
+ **Best For:**
 - Exploratory data analysis
 - Baseline model establishment
 - Maximum signal retention scenarios
 - Fast prototyping and iteration
 - Feature importance studies
 
-❌ **Avoid For:**
+ **Avoid For:**
 - Precision measurements requiring high purity
 - Background-limited analyses
 - Resource-constrained deployments
 
 #### Gradient Boosting
-✅ **Best For:**
+ **Best For:**
 - Discovery-oriented searches
 - Inclusive measurements
 - Scenarios requiring maximum statistics
 - Ultra-pure selections at high thresholds
 - Resource-constrained deployments
 
-❌ **Avoid For:**
+ **Avoid For:**
 - Time-critical training scenarios
 - Parallel processing requirements
 - When training speed matters
 
 #### XGBoost (Champion)
-✅ **Best For:**
+ **Best For:**
 - Precision Higgs measurements
 - Cross-section determinations
 - Differential distribution studies
@@ -369,7 +369,7 @@ Operating characteristics at various working points:
 - Background-limited searches
 - **DEFAULT RECOMMENDATION**
 
-❌ **Avoid For:**
+ **Avoid For:**
 - Analyses requiring >90% signal efficiency
 - Discovery searches maximizing event counts
 
@@ -477,12 +477,12 @@ Standard deviation of AUC across 100 bootstrap samples:
 
 ## Final Recommendations
 
-### 🏆 Overall Champion: XGBoost
+###  Overall Champion: XGBoost
 
 **Primary Recommendation**: Use **XGBoost with threshold 0.5** as the default model for Higgs boson signal discrimination.
 
 **Justification:**
-1. ⭐ **Best S/B ratio** (7.77) - Critical for precision measurements
+1.  **Best S/B ratio** (7.77) - Critical for precision measurements
 2. ✓ **Strong AUC** (0.6942) - Excellent overall discrimination
 3. ✓ **Balanced training time** (75s) - Faster than GB, acceptable vs RF
 4. ✓ **Good inference speed** (110k events/s) - Production-ready
@@ -576,7 +576,7 @@ The **∞% improvement** over physics-based cuts is not hyperbole - it's the lit
 
 ### Final Model Selection
 
-**🏆 XGBoost @ threshold 0.5**
+** XGBoost @ threshold 0.5**
 - **Recommended for**: Production deployment, precision measurements, standard analyses
 - **Performance**: S/B = 7.77, AUC = 0.6942, 62.3% efficiency
 - **Status**: Champion model, ready for physics publication
@@ -610,7 +610,7 @@ The **∞% improvement** over physics-based cuts is not hyperbole - it's the lit
 ---
 
 **Analysis Version**: 1.0  
-**Status**: ✅ Complete  
+**Status**:  Complete  
 **Last Updated**: January 2025  
 **Champion Model**: XGBoost  
 **Recommended Configuration**: `configs/xgboost_config.yml`  
@@ -618,6 +618,6 @@ The **∞% improvement** over physics-based cuts is not hyperbole - it's the lit
 
 **Citation**: If you use this analysis, please cite:
 ```
-[Your Name] (2025). Machine Learning for Higgs Boson Signal Discrimination 
-at the LHC. GitHub: [repository URL]
+Muhaddisa (2025). Machine Learning for Higgs Boson Signal Discrimination 
+at the LHC. GitHub: https://github.com/Muhaddisa12/Higgs-Bosons-Event-Identification-ML-Project
 ```

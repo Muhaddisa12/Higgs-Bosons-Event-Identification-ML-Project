@@ -56,7 +56,7 @@ XGBClassifier(
 | **Precision** | 64.81% | 2nd | Signal purity (TP / (TP + FP)) |
 | **Recall** | 62.34% | 3rd | Signal efficiency (TP / (TP + FN)) |
 | **F1-Score** | 0.6351 | 3rd | Harmonic mean of precision and recall |
-| **S/B Ratio @ 0.5** | **7.7714** | **🥇 1st** | **Best signal-to-background ratio** |
+| **S/B Ratio @ 0.5** | **7.7714** | **1st** | **Best signal-to-background ratio** |
 
 ### Cross-Validation Results
 
@@ -296,32 +296,32 @@ Stochastic features (subsample=0.8, colsample_bytree=0.8) improve generalization
 | **Events Passing** | 0 | 68,084 | 64,964 | **50,935** |
 | **Signal Efficiency** | 0% | 94.2% | 96.4% | **62.3%** |
 | **Background Rej.** | 100% | 61.3% | 70.4% | **61.9%** |
-| **S/B Ratio** | - | 1.19 | 3.10 | **🥇 7.77** |
-| **AUC-ROC** | - | 🥇 0.6939 | 0.6936 | **0.6942** |
-| **Accuracy** | 0% | 86.34% | 🥇 86.37% | **86.24%** |
-| **Precision** | - | 73.2% | 🥇 78.6% | **64.8%** |
-| **Training Time** | - | 🥇 45s | 180s | **75s** |
-| **Model Size** | - | 1.2 GB | 🥇 0.3 GB | **0.4 GB** |
-| **Inference Speed** | - | 47k/s | 🥇 125k/s | **110k/s** |
+| **S/B Ratio** | - | 1.19 | 3.10 | ** 7.77** |
+| **AUC-ROC** | - |  0.6939 | 0.6936 | **0.6942** |
+| **Accuracy** | 0% | 86.34% |  86.37% | **86.24%** |
+| **Precision** | - | 73.2% |  78.6% | **64.8%** |
+| **Training Time** | - |  45s | 180s | **75s** |
+| **Model Size** | - | 1.2 GB |  0.3 GB | **0.4 GB** |
+| **Inference Speed** | - | 47k/s |  125k/s | **110k/s** |
 
 ### When to Use Each Model
 
 **Random Forest**: 
-- ✅ Maximum signal retention (94.2%)
-- ✅ Fastest training (45s)
-- ❌ Lower S/B ratio (1.19)
+-  Maximum signal retention (94.2%)
+-  Fastest training (45s)
+-  Lower S/B ratio (1.19)
 
 **Gradient Boosting**: 
-- ✅ Best signal efficiency (96.4%)
-- ✅ Smallest model (0.3 GB)
-- ❌ Slowest training (180s)
+-  Best signal efficiency (96.4%)
+-  Smallest model (0.3 GB)
+-  Slowest training (180s)
 
 **XGBoost** (Recommended): 
-- ✅ **Best S/B ratio (7.77)** ⭐
-- ✅ Best for precision measurements
-- ✅ Balanced training time (75s)
-- ✅ Good AUC (0.6942)
-- ⚠️ Lower signal efficiency (62.3%)
+-  **Best S/B ratio (7.77)** 
+-  Best for precision measurements
+-  Balanced training time (75s)
+-  Good AUC (0.6942)
+-  Lower signal efficiency (62.3%)
 
 ---
 
@@ -359,9 +359,9 @@ Stochastic features (subsample=0.8, colsample_bytree=0.8) improve generalization
 
 ## Strengths and Limitations
 
-### ✅ Strengths
+###  Strengths
 
-1. **🏆 Best S/B ratio (7.77)** - Dramatically superior background rejection
+1. ** Best S/B ratio (7.77)** - Dramatically superior background rejection
 2. **Highest precision at working point** - Ideal for precision measurements
 3. **Excellent AUC** (0.6942) - Strong overall discrimination
 4. **Optimal training time** - 2.4× faster than Gradient Boosting
@@ -372,7 +372,7 @@ Stochastic features (subsample=0.8, colsample_bytree=0.8) improve generalization
 9. **Balanced feature importance** - Uses multiple features effectively
 10. **Robust cross-validation** - Consistent performance across folds
 
-### ⚠️ Limitations
+###  Limitations
 
 1. **Lower signal efficiency** (62.3%) vs Random Forest (94.2%) and Gradient Boosting (96.4%)
 2. **Higher false negative rate** - Misses 37.7% of Higgs events
@@ -380,7 +380,7 @@ Stochastic features (subsample=0.8, colsample_bytree=0.8) improve generalization
 4. **Requires understanding** of gradient boosting for optimal use
 5. **Sequential boosting component** - Not fully parallelizable
 
-### 🎯 Optimal Use Cases
+###  Optimal Use Cases
 
 - **Precision Higgs measurements** requiring high purity samples
 - **Background-dominated searches** where S/B is critical
@@ -554,29 +554,29 @@ print(f"Maximum S/B ratio: {best_sb:.4f}")
 
 **XGBoost is the champion model** for Higgs boson signal-background discrimination in this analysis, achieving:
 
-- 🏆 **Best S/B ratio of 7.77:1** - 2.5× better than Gradient Boosting, 6.5× better than Random Forest
-- ⚡ **Excellent training efficiency** - 2.4× faster than Gradient Boosting
-- 🎯 **High precision** - 64.8% signal purity at working point
-- 📊 **Strong AUC** - 0.6942, virtually tied for best
-- 💾 **Compact model** - 0.4 GB, suitable for deployment
+-  **Best S/B ratio of 7.77:1** - 2.5× better than Gradient Boosting, 6.5× better than Random Forest
+-  **Excellent training efficiency** - 2.4× faster than Gradient Boosting
+-  **High precision** - 64.8% signal purity at working point
+-  **Strong AUC** - 0.6942, virtually tied for best
+-  **Compact model** - 0.4 GB, suitable for deployment
 
 **Trade-off Acceptance**: The lower signal efficiency (62.3% vs 94-96% for other models) is an acceptable trade-off for the dramatically superior background rejection, making XGBoost ideal for precision measurements and background-limited searches.
 
 **Physics Impact**: XGBoost enables high-purity Higgs samples that were impossible with traditional cut-based methods, advancing the frontier of precision Higgs physics at the LHC.
 
-**Final Assessment**: ⭐⭐⭐⭐⭐ (5/5)
-- 🥇 Champion model overall
-- 🥇 Best S/B ratio by far
-- 🥇 Ideal for precision measurements
-- ✅ Production-ready deployment
-- ✅ Excellent computational efficiency
+**Final Assessment**:  (5/5)
+-  Champion model overall
+-  Best S/B ratio by far
+-  Ideal for precision measurements
+-  Production-ready deployment
+-  Excellent computational efficiency
 
 **Recommended for**: Precision Higgs measurements, cross-section determinations, and any analysis where background rejection is critical.
 
 ---
 
 **Model Version**: 1.0  
-**Status**: 🏆 Champion Model  
+**Status**:  Champion Model  
 **Last Updated**: January 2025  
 **Model Files**: 
 - `models/xgboost_best.json` (XGBoost native format)

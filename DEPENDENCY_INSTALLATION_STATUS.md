@@ -1,6 +1,6 @@
 # Dependency Installation Status
 
-## ⚠️ Critical Issue: Python Version
+##  Critical Issue: Python Version
 
 **Current Python Version**: 3.15.0a3 (Alpha Release)
 
@@ -17,12 +17,12 @@ These packages would need to be compiled from source, which requires:
 - Or Visual Studio Build Tools
 - Significant compilation time
 
-## ✅ Currently Installed
+##  Currently Installed
 
 - **PyYAML** (6.0.3) ✓
 - **setuptools, wheel, packaging** ✓
 
-## ❌ Not Installed (Require Stable Python)
+##  Not Installed (Require Stable Python)
 
 - numpy
 - pandas
@@ -35,7 +35,7 @@ These packages would need to be compiled from source, which requires:
 - notebook
 - xgboost
 
-## 🎯 Recommended Solutions
+##  Recommended Solutions
 
 ### Solution 1: Install Stable Python (Easiest)
 
@@ -86,7 +86,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 📋 Installation Commands (After Switching to Stable Python)
+##  Installation Commands (After Switching to Stable Python)
 
 Once you have Python 3.11 or 3.12:
 
@@ -101,7 +101,7 @@ python -m pip install -r requirements.txt
 python check_installations.py
 ```
 
-## 🔍 Verify Installation
+##  Verify Installation
 
 After installing with stable Python, run:
 
@@ -111,7 +111,7 @@ python check_installations.py
 
 You should see all packages marked with ✓.
 
-## 📝 Next Steps
+##  Next Steps
 
 1. **Install Python 3.11 or 3.12** (recommended)
 2. **Or install Conda** and use the environment.yml
@@ -122,7 +122,7 @@ You should see all packages marked with ✓.
    python scripts/train_models.py --model all
    ```
 
-## ⚡ Quick Test
+## Quick Test
 
 To test if your Python version supports the packages:
 

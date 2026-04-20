@@ -1,6 +1,6 @@
 # Installation Notes
 
-## ⚠️ Python Version Issue
+##  Python Version Issue
 
 You are currently using **Python 3.15.0a3** (alpha version), which does not have pre-built wheels for many scientific packages like numpy, pandas, scikit-learn, etc.
 
@@ -50,9 +50,9 @@ This is not recommended for most users.
 ## Currently Installed Packages
 
 The following packages are already installed:
-- PyYAML (6.0.3) ✅
-- setuptools, wheel, packaging ✅
-- pytest, jupyter, notebook (may install) ✅
+- PyYAML (6.0.3) 
+- setuptools, wheel, packaging 
+- pytest, jupyter, notebook (may install) 
 
 ## Missing Packages (Require Stable Python)
 

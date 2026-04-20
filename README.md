@@ -2,7 +2,7 @@
 
 A research-grade machine learning pipeline for Higgs boson signal discrimination at the LHC using tree-based ensemble methods (Random Forest, Gradient Boosting, XGBoost).
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements a complete machine learning pipeline for discriminating Higgs boson signal events from background events in LHC collision data. The pipeline is designed with research-grade standards, featuring modular architecture, comprehensive evaluation, and full reproducibility.
 
@@ -15,7 +15,7 @@ This project implements a complete machine learning pipeline for discriminating 
 - **Full Reproducibility**: Deterministic splits, random seeds, saved models and metadata
 - **Research-Grade**: Suitable for academic publication and CERN analysis
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 higgs-ml-discrimination/
@@ -97,7 +97,7 @@ higgs-ml-discrimination/
     └── api_reference.md
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Installation
 
@@ -162,7 +162,7 @@ Run the complete pipeline (data prep → training → evaluation → plots):
 bash scripts/run_full_analysis.sh
 ```
 
-## 📊 Dataset
+##  Dataset
 
 The HIGGS dataset contains 11 million collision events with 28 features. The first column is the class label:
 - **1**: Higgs boson signal event
@@ -178,7 +178,7 @@ Key features used:
 - `gap_backward`: Backward rapidity gap
 - `n_extra_activity`: Extra jet activity
 
-## 🧪 Model Performance
+##  Model Performance
 
 ### XGBoost (Champion Model)
 - **AUC-ROC**: 0.6942
@@ -198,7 +198,7 @@ Key features used:
 - **Signal Efficiency**: 94.2%
 - **Training Time**: ~45 seconds
 
-## 📝 Configuration
+##  Configuration
 
 All model hyperparameters and preprocessing settings are in YAML config files:
 
@@ -209,7 +209,7 @@ All model hyperparameters and preprocessing settings are in YAML config files:
 
 Modify these files to experiment with different settings.
 
-## 🧬 Usage Examples
+##  Usage Examples
 
 ### Using the Models Programmatically
 
@@ -246,7 +246,7 @@ model.load('models/xgboost_best.pkl')
 predictions = model.predict(new_data)
 ```
 
-## 🧪 Testing
+##  Testing
 
 Run tests:
 ```bash
@@ -258,14 +258,14 @@ Run specific test file:
 pytest tests/test_models.py
 ```
 
-## 📚 Documentation
+##  Documentation
 
 - `docs/methodology.md`: Detailed methodology and approach
 - `docs/physics_background.md`: Physics background and context
 - `docs/api_reference.md`: API documentation
 - `docs/RESULTS_*.md`: Detailed results for each model
 
-## 🔬 Notebooks
+##  Notebooks
 
 Jupyter notebooks for interactive analysis:
 
@@ -275,7 +275,7 @@ Jupyter notebooks for interactive analysis:
 4. **04_results_visualization.ipynb**: Results visualization
 5. **05_physics_interpretation.ipynb**: Physics interpretation
 
-## 🤝 Contributing
+##  Contributing
 
 This is a research project. For contributions:
 1. Fork the repository
@@ -283,11 +283,11 @@ This is a research project. For contributions:
 3. Make changes with tests
 4. Submit a pull request
 
-## 📄 License
+##  License
 
 See LICENSE file for details.
 
-## 🙏 Citation
+##  Citation
 
 If you use this code in your research, please cite:
 
@@ -296,12 +296,12 @@ If you use this code in your research, please cite:
 at the LHC. GitHub: [repository URL]
 ```
 
-## 📧 Contact
+##  Contact
 
 For questions or issues, please open an issue on GitHub.
 
 ---
 
-**Status**: ✅ Production Ready  
+**Status**:  Production Ready  
 **Version**: 1.0.0  
 **Last Updated**: January 2025

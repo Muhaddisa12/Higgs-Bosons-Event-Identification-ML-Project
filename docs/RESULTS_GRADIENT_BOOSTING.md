@@ -264,7 +264,7 @@ Trees specialize in different aspects:
 | Signal Efficiency | 0% | 96.4% | **+∞** |
 | Background Rejection | 100% | 70.4% | Complete recovery |
 | S/B Ratio | Undefined | 3.10 | **3x better than RF** |
-| Analysis Viable? | ❌ No | ✅ Yes | Enabled |
+| Analysis Viable? |  No |  Yes | Enabled |
 
 ### Gradient Boosting vs Random Forest
 
@@ -309,7 +309,7 @@ Trees specialize in different aspects:
 
 ## Strengths and Limitations
 
-### ✅ Strengths
+###  Strengths
 
 1. **Best signal efficiency** (96.4%) - captures more Higgs events than any other model
 2. **Strong S/B ratio** (3.10) - second only to XGBoost
@@ -319,7 +319,7 @@ Trees specialize in different aspects:
 6. **Clean probability calibration** - scores well-separated and interpretable
 7. **Robust to overfitting** - train-val gap consistently minimal
 
-### ⚠️ Limitations
+###  Limitations
 
 1. **Long training time** (180s) - 4× slower than Random Forest
 2. **Sequential training** - cannot parallelize boosting iterations
@@ -328,7 +328,7 @@ Trees specialize in different aspects:
 5. **Sensitive to learning rate** - requires careful tuning
 6. **Less interpretable** than Random Forest due to sequential corrections
 
-### 🎯 Best Use Cases
+###  Best Use Cases
 
 - **Precision measurements** requiring high purity and efficiency
 - **Production environments** where model size matters
@@ -452,7 +452,7 @@ Its **small model size**, **fast inference**, and **well-calibrated probabilitie
 
 **Trade-off**: Longer training time (180s vs 45s for RF) is acceptable given the substantial improvements in signal purity and efficiency.
 
-**Final Assessment**: ⭐⭐⭐⭐½ (4.5/5)
+**Final Assessment**:  (4.5/5)
 - Best signal efficiency (96.4%)
 - Strong S/B ratio (2nd best)
 - Excellent for precision measurements

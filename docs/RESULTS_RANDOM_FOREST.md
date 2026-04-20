@@ -224,7 +224,7 @@ For misclassified events:
 | Signal Efficiency | 0% | 94.2% | **+∞** |
 | Background Rejection | 100% | 61.3% | Complete signal recovery |
 | S/B Ratio | Undefined | 1.19 | Enables analysis |
-| Analysis Possible? | ❌ No | ✅ Yes | Analysis enabled |
+| Analysis Possible? |  No |  Yes | Analysis enabled |
 
 **Critical Achievement**: Random Forest successfully identifies 49,872 Higgs events where traditional methods found zero, enabling physics analysis that would otherwise be impossible.
 
@@ -279,7 +279,7 @@ Training performance vs number of trees:
 
 ## Strengths and Limitations
 
-### ✅ Strengths
+###  Strengths
 
 1. **Highest AUC-ROC** (0.6939) among all models tested
 2. **Excellent signal efficiency** (94.2%) - minimizes signal loss
@@ -289,7 +289,7 @@ Training performance vs number of trees:
 6. **No feature scaling required** - simplifies preprocessing
 7. **Handles feature interactions** naturally through tree structure
 
-### ⚠️ Limitations
+###  Limitations
 
 1. **Lower S/B ratio** (1.19) compared to XGBoost (7.77)
 2. **Higher false positive rate** (38.7%) - more background contamination
@@ -297,7 +297,7 @@ Training performance vs number of trees:
 4. **Limited extrapolation** beyond training distribution
 5. **Difficulty with rare event regions** - trees struggle with <1% of data
 
-### 🎯 Best Use Cases
+###  Best Use Cases
 
 - **Discovery analyses** requiring maximum signal retention
 - **Inclusive measurements** where high statistics are valuable
@@ -377,7 +377,7 @@ The Random Forest classifier achieves **excellent overall discrimination** with 
 
 While it produces a lower S/B ratio compared to XGBoost, its robust performance, interpretability, and computational efficiency make it a strong baseline and production-ready model for Higgs boson identification in LHC data.
 
-**Final Assessment**: ⭐⭐⭐⭐⭐ (5/5)
+**Final Assessment**:  (5/5)
 - Best overall discrimination (AUC)
 - Excellent for high-sensitivity applications
 - Production-ready performance
